@@ -1,3 +1,7 @@
+/* App.css es el CSS por defecto que trae Vite/React cuando creás un proyecto nuevo.
+Como ya se reemplazó ese contenido por componentes propios (EquipoTalentoLab, TarjetaProyecto, etc.), este CSS no se está usando.
+- se podría dejar solo la parte de #root porque da un contenedor centrado y con padding: contenido centrado y con un margen agradable en pantallas grandes.
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -40,3 +44,14 @@
 .read-the-docs {
   color: #888;
 }
+
+*/
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+

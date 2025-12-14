@@ -1,54 +1,46 @@
 import React from "react";
-import ListaEquipo from "./ListaEquipo"; //importa el componente ListaUsuarios
-//import Header from "./components/Header";
-//import './estilos/estilos.css' // se vuelve global y aplica sobre los componentes
-import Header from "./components/Header";
+import Header from "./components/Header"; 
 import Nav from "./components/Nav";
-import Main from "./components/Main";
+import Main from "./components/Main"; 
 import Gallery from "./components/Gallery";
-import EquipoTalentoLab from "./components/EquipoTalentoLab";
+import EquipoTalentoLab from "./components/EquipoTalentoLab"; 
+import TarjetaProyecto from "./components/TarjetaProyecto"; 
+import GaleriaIntereses from "./components/GaleriaIntereses"; 
+import Footer from "./components/Footer"; 
+
 
 import './estilos/estilo.css';
 
 function App() {
-/*
-  // array de objetos:
+
+
   const equipo = [
-  { id: 1, nombre: 'Silvia', tecnologia: 'Product Owner' },
-  { id: 2, nombre: 'Luis', tecnologia: 'Diseñador UX UI' },
-  { id: 3, nombre: 'Matías', tecnologia: 'Desarrollador' },   
-  { id: 4, nombre: 'Sabrina', tecnologia: 'Desarrolladora' }
-]; //Reemplazo esta parte del código para cumplir con el ejercicio 2.1 del material ampliado:
-2.1 Crea un componente EquipoTalentoLab: Este componente debe recibir como prop un array de objetos, donde cada objeto represente a un miembro del equipo.
-○ Propiedades de cada objeto: nombre, rol, e imagen.
-○ El componente debe mostrar una tarjeta para cada miembro con su foto, nombre y rol.
-*/
+    {
+      nombre: "Silvia",
+      rol: "Product Owner",
+      imagen: "https://picsum.photos/id/64/4326/2884",
+    },
 
-const equipo = [
-  {
-    nombre: "Silvia",
-    rol: "Product Owner",
-    imagen: "https://picsum.photos/id/64/4326/2884",
-  },
+    {
+      nombre: "Luis",
+      rol: "Diseñador UX/UI",
+      imagen: "https://images.unsplash.com/photo-1525457136159-8878648a7ad0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
 
-  {
-    nombre: "Luis",
-    rol: "Diseñador UX/UI",
-    imagen: "https://images.unsplash.com/photo-1525457136159-8878648a7ad0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  },
+    {
+      nombre: "Matías",
+      rol: "Desarrollador Frontend",
+      imagen: "https://media.istockphoto.com/id/2195226068/es/foto/retrato-al-aire-libre-de-un-hombre-alegre-en-una-naturaleza-llena-de-sol.webp?a=1&b=1&s=612x612&w=0&k=20&c=VOeGqZTdWfIFOVQPXCdNe560phcPw53w71y8EN145BA=",
+    },
 
-  {
-    nombre: "Matías",
-    rol: "Desarrollador Frontend",
-    imagen: "https://media.istockphoto.com/id/2195226068/es/foto/retrato-al-aire-libre-de-un-hombre-alegre-en-una-naturaleza-llena-de-sol.webp?a=1&b=1&s=612x612&w=0&k=20&c=VOeGqZTdWfIFOVQPXCdNe560phcPw53w71y8EN145BA=",
-  },
+    {
+      nombre: "Sabrina",
+      rol: "Desarrolladora Backend",
+      imagen:"https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80",
+    },
+  ];
 
-  {
-    nombre: "Sabrina",
-    rol: "Desarrolladora Backend",
-    imagen:"https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80",
-  },
-];
+  const intereses = ['React', 'JavaScript', 'APIs', 'Diseño UX', 'Node.js'];
 
   return ( 
     // invoco al componente ListaUsuario
@@ -60,7 +52,13 @@ const equipo = [
     <Main />
     <Gallery />
     <EquipoTalentoLab equipo={equipo} />
-    <ListaEquipo equipo={equipo}/> 
+    <TarjetaProyecto
+      titulo="Web Inmersiva"
+      descripcion="Un proyecto innovador para cambiar la web con tecnologías del Metaverso."
+      botonTexto="Ver Más"
+    />
+    <GaleriaIntereses intereses={intereses}/>
+    <Footer />
     </>
   );
 } export default App;
