@@ -8,7 +8,8 @@ function Footer() {
         textAlign: "center", 
         marginTop: "20px" 
     }}> 
-        <p>&copy; 2025 - Mi Aplicación React - De MaruT</p> 
+        <p>&copy; 2025 - Tienda Online - De MaruT</p> 
+        <p>Proyecto sin fines comerciales, sólo con propósito educativo bajo el marco de Talento Tech</p>
     </footer>
     );
 } 

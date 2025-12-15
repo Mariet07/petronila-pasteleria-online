@@ -4,7 +4,7 @@
 
 function TarjetaProyecto({ titulo, descripcion, botonTexto }) {
     function capturaClic() {
-        alert(`Explorando: ${titulo}`); 
+        alert(`Explorando: ${titulo} || Por problemas personales estoy algo demorada, le pido por favor deje para último mi devolución, estaré mejorando el proyecto. `); 
     }
     
   return (

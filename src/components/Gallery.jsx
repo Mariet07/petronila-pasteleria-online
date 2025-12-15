@@ -6,9 +6,7 @@ function Gallery() {
         "https://picsum.photos/160?text=Imagen+1", 
         "https://picsum.photos/170?text=Imagen+1", 
         "https://picsum.photos/180?text=Imagen+1", 
-        "https://picsum.photos/id/1/200/300?text=Imagen+1", 
-
-
+        "https://picsum.photos/id/1/200/300?text=Imagen+1"
     ];
 
   return (
