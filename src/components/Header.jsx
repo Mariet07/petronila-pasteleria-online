@@ -4,7 +4,7 @@ function Header() {
   return (
     <>
     <header style={{
-        backgroundColor: "#c2919cff", //a dif de css se usa camel case en vez de separado (background-color)
+        backgroundColor: "#3d21e0ff", //a dif de css se usa camel case en vez de separado (background-color) #c2919cff
         padding: "10px",
         textAlign: "center",
         color: "white" //color de texto
